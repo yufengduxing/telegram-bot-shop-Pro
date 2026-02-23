@@ -15,8 +15,10 @@
 ### 步骤二：SSH 执行安装
 
 ```bash
-cd /root/TG-Bot-Fixed
+cd /root/TG-Bot-Fixed（/root/TG-Bot-Fixed改成自己的根目录）
+
 chmod +x install.sh
+
 bash install.sh
 ```
 
