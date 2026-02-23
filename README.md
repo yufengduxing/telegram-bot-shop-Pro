@@ -49,17 +49,17 @@ tail -f /www/wwwroot/tg-bot/bot.log
 
 ## 常见问题
 
-**Q：守护进程显示 FATAL / STOPPED？**
+守护进程显示 FATAL / STOPPED？**
 - 查看日志：`tail -50 /www/wwwroot/tg-bot/bot.log`
 - 最常见原因：Bot Token 填错、服务器访问不了 Telegram（国内服务器需配置代理）
 
-**Q：国内服务器连不上 Telegram？**
+国内服务器连不上 Telegram？**
 - 需要在服务器配置代理，或使用香港/海外服务器
 
-**Q：再次运行 install.sh 会重装吗？**
+再次运行 install.sh 会重装吗？**
 - 不会，检测到已安装会直接进入管理菜单
 
-**Q：⚠️ 常见原因：Bot Token 填错 | 服务器无法访问 Telegram（需代理）
+⚠️ 常见原因：Bot Token 填错 | 服务器无法访问 Telegram（需代理）
 ```bash
 # 卸载旧版，安装兼容 Python 3.13 的最新版
 pip3 install --upgrade python-telegram-bot --break-system-packages
