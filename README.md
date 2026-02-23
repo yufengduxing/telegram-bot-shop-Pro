@@ -73,19 +73,6 @@ supervisorctl status tg_shop_bot
 pip3 show python-telegram-bot | grep Version
 ---
 
-## 文件结构
 
-```
-TG-Bot-Fixed/
-├── bot.py              # 主程序
-├── config.py           # 配置模板（安装脚本会覆盖）
-├── database.py         # 数据库操作
-├── tron_payment.py     # TRC20 收款检测
-├── requirements.txt    # Python 依赖
-├── install.sh          # 一键安装脚本（已修复）
-├── handlers/
-│   ├── __init__.py
-│   ├── admin_handlers.py
-│   └── user_handlers.py
-└── README.md
-```
+
+
