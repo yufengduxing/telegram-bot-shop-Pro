@@ -39,6 +39,22 @@ supervisorctl status tg_shop_bot
 
 ---
 
+提示：⚠️常见原因：Bot Token 填错 | 服务器无法访问 Telegram（需代理）
+
+```bash
+# 卸载旧版，安装兼容 Python 3.13 的最新版
+pip3 install --upgrade python-telegram-bot --break-system-packages
+
+# 重启机器人
+supervisorctl restart tg_shop_bot
+sleep 3
+supervisorctl status tg_shop_bot
+
+如果还报错，看下装上什么版本：
+pip3 show python-telegram-bot | grep Version
+---
+
+
 ## 查看日志
 
 ```bash
@@ -58,21 +74,3 @@ tail -f /www/wwwroot/tg-bot/bot.log
 
 再次运行 install.sh 会重装吗？**
 - 不会，检测到已安装会直接进入管理菜单
-
-⚠️ 常见原因：Bot Token 填错 | 服务器无法访问 Telegram（需代理）
-```bash
-# 卸载旧版，安装兼容 Python 3.13 的最新版
-pip3 install --upgrade python-telegram-bot --break-system-packages
-
-# 重启机器人
-supervisorctl restart tg_shop_bot
-sleep 3
-supervisorctl status tg_shop_bot
-
-如果还报错，看下装上什么版本：
-pip3 show python-telegram-bot | grep Version
----
-
-
-
-
