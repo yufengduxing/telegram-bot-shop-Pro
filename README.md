@@ -1,4 +1,6 @@
-# TG 卖货机器人
+## TG 卖货机器人
+
+## TG群组：https://t.me/yufeng_duxing
 
 ---
 
