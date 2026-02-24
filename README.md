@@ -2,8 +2,6 @@
 
 ## TG群组：https://t.me/yufeng_duxing
 
----
-
 ## 宝塔部署步骤
 
 ### 前提条件
